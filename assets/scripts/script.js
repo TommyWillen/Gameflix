@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   let matchMeEL = $("#matchMe");
 
-  let questions = [
+  let startQuestions = [
     {
       ques: "1)	What is your preferred gaming platform?",
       options: [
@@ -22,173 +22,180 @@ $(document).ready(function () {
         "c.	I like working as a team towards one goal (Co-op) ",
       ],
       answer: "",
-    },
+    }
+];
 
+let singleQuestions = [
     {
-      ques: "3) Out of the following, which game do you like best?",
-      options: [
-        "a.	Sims (LiveLaughLove)",
-        "b.	NBA 2K (Bruh)",
-        "c.	Civilization (puzzle)",
-        "d.	Sonic Mania (nostalgic Comedian)",
-        "e.	Elder Scrolls: Skyrim (Wanderluster)",
-      ],
-      answer: "",
-    },
+        ques: "3) Out of the following, which game do you like best?",
+        options: [
+          "a.	Sims",
+          "b.	NBA 2K",
+          "c.	Civilization",
+          "d.	Sonic Mania",
+          "e.	Elder Scrolls: Skyrim",
+        ],
+        answer: "",
+      },
+  
+      {
+        ques: "4) Out of the following, which podcast do you like best?",
+        options: [
+          "a.	Office Ladies",
+          "b.	The Joe Rogan Experience",
+          "c.	The NoSleep Podcast",
+          "d.	My Favorite Murder",
+          "e.	High Rollers DND",
+        ],
+        answer: "",
+      },
+      {
+        ques: "5)	Which would you most likely do in your free time?",
+        options: [
+          "a.	Hang out with friends",
+          "b.	Go to the gym",
+          "c.	Read a book",
+          "d.	Watch a TV series with a mysterious plot line",
+          "e.	Play DND",
+        ],
+        answer: "",
+      },
+  
+      {
+        ques: "6) What is your attention span like?",
+        options: [
+          "a.	I get most information from memes I see on social media",
+          "b.	I pay attention to things presented in an interesting way",
+          "c.	I can spend hours on the same activity, whether it’s needed or just something I want to do",
+          "d.	It’s not bad, but I prefer paying attention to things that have a clear goal and are interesting or fun",
+          "e.	I pay attention to things that matter to me",
+        ],
+        answer: "",
+      },
+  
+      {
+        ques:
+          "7)	Out of the following, which fictional or non-fictional world would you rather exist in?",
+        options: [
+          "a. Disney universe",
+          "b.	Rick and Morty universe",
+          "c.	 The Victorian Era",
+          "d.	 The Marvel or DC Universe",
+          "e.	The Game of Thrones universe",
+        ],
+        answer: "",
+      }
+];
 
+let multiQuestions = [
     {
-      ques: "4) Out of the following, which podcast do you like best?",
-      options: [
-        "a.	Office Ladies (LiveLaughLove)",
-        "b.	The Joe Rogan Experience (Bruh)",
-        "c.	The NoSleep Podcast (puzzle)",
-        "d.	My Favorite Murder (nostalgic Comedian)",
-        "e.	High Rollers DND (Wanderluster)",
-      ],
-      answer: "",
-    },
-    {
-      ques: "5)	Which would you most likely do in your free time?",
-      options: [
-        "a.	Hang out with friends (LiveLaughLove)",
-        "b.	Go to the gym (Bruh)",
-        "c.	Read a book (puzzle)",
-        "d.	Watch a TV series with a mysterious plot line (nostalgic Comedian)",
-        "e.	Play DND (Wanderluster)",
-      ],
-      answer: "",
-    },
+        ques: "3) Out of the following, which game do you like best?",
+        options: [
+          "a.	Mortal Kombat",
+          " b.	Apex Legends",
+          "c.	Super Mario Party",
+          "d.	World of Warcraft",
+        ],
+        answer: "",
+      },
+      {
+        ques: "4) 	Out of the following, which podcast do you like best?",
+        options: [
+          "a.	The NoSleep Podcast",
+          "b.	The Adventure Zone",
+          "c.	Stuff You Missed In History Class",
+          "d.	High Rollers DND",
+        ],
+        answer: "",
+      },
+      {
+        ques: "5) Which would you most likely do in your free time?",
+        options: [
+          "a.	Play a video game",
+          "b.	Watch a TV series with an involved plot line",
+          "c.	Hang out with friends or family",
+          "d.	Go on a short day trip somewhere",
+        ],
+        answer: "",
+      },
+  
+      {
+        ques: "6)	What is your attention span like?",
+        options: [
+          "a.	I pay attention to things that matter to me",
+          "b.	I get most information from memes I see on social media",
+          "c.	I can spend hours on the same activity, whether it’s needed or just something I want to do",
+          "d.	I pay attention to things presented in an interesting way",
+        ],
+        answer: "",
+      },
+      {
+        ques:
+          "7)	Out of the following, which fictional or non-fictional world would you rather exist in?",
+        options: [
+          "a.	Rick and Morty universe",
+          "b.	Star Wars",
+          "c.	Disney universe",
+          "d.	The Game of Thrones universe",
+        ],
+        answer: "",
+      }
+];
 
+let coopQuestions = [
     {
-      ques: "6) What is your attention span like?",
-      options: [
-        "a.	I get most information from memes I see on social media (LiveLaughLove)",
-        "b.	I pay attention to things presented in an interesting way (Bruh)",
-        "c.	I can spend hours on the same activity, whether it’s needed or just something I want to do (puzzle)",
-        "d.	It’s not bad, but I prefer paying attention to things that have a clear goal and are interesting or fun (nostalgic Comedian",
-        "e.	I pay attention to things that matter to me (Wanderluster)",
-      ],
-      answer: "",
-    },
-
-    {
-      ques:
-        "7)	Out of the following, which fictional or non-fictional world would you rather exist in?",
-      options: [
-        "a. Disney universe (LiveLaughLove)",
-        "b.	Rick and Morty universe (Bruh)",
-        "c.	 The Victorian Era (puzzle)",
-        "d.	 The Marvel or DC Universe (nostalgic Comedian)",
-        "e.	The Game of Thrones universe (Wanderluster)",
-      ],
-      answer: "",
-    },
-
-    {
-      ques: "8) Out of the following, which game do you like best?",
-      options: [
-        "a.	Mortal Kombat (Displaced rage)",
-        " b.	Apex Legends (adrenaline addict)",
-        "c.	Super Mario Party (easy going) ",
-        "d.	World of Warcraft (Wanderluster)",
-      ],
-      answer: "",
-    },
-    {
-      ques: "9) 	Out of the following, which podcast do you like best?",
-      options: [
-        "a.	The NoSleep Podcast (Displaced rage)",
-        "b.	The Adventure Zone (adrenaline addict)",
-        "c.	Stuff You Missed In History Class (easy going",
-        "d.	The Joe Rogan Experience (Bruh)",
-      ],
-      answer: "",
-    },
-    {
-      ques: "10) Which would you most likely do in your free time?",
-      options: [
-        "a.	Play a video game (Displaced rage)",
-        "b.	Watch a TV series with an involved plot line (adrenaline addict)",
-        "c.	Hang out with friends or family (easy going)",
-        "d.	Go to the gym (Bruh)",
-      ],
-      answer: "",
-    },
-
-    {
-      ques: "11)	What is your attention span like?",
-      options: [
-        "a.	I pay attention to things that matter to me (Displaced rage)",
-        "b.	I get most information from memes I see on social media (adrenaline addict)",
-        "c.	I can spend hours on the same activity, whether it’s needed or just something I want to do (easy going)",
-        "d.	I pay attention to things presented in an interesting way (Wanderluster)",
-      ],
-      answer: "",
-    },
-    {
-      ques:
-        "12)	Out of the following, which fictional or non-fictional world would you rather exist in?",
-      options: [
-        "a.	Rick and Morty universe (Displaced rage)",
-        "b.	Star Wars (adrenaline addict)",
-        "c.	Disney universe (easy going)",
-        "d.	The Marvel or DC universe (Bruh)",
-      ],
-      answer: "",
-    },
-    {
-      ques: "13) Out of the following, which game do you like best?",
-      options: [
-        "a.	Mortal Kombat (Displaced rage)",
-        "b.	Apex Legends (adrenaline addict)",
-        "c.	Super Mario Party (easy going)",
-        "d.	World of Warcraft (Wanderluster)",
-      ],
-      answer: "",
-    },
-    {
-      ques: "14) Out of the following, which podcast do you like best?",
-      options: [
-        "a.	The NoSleep Podcast (Displaced rage)",
-        "b.	The Adventure Zone (adrenaline addict)",
-        "c.	Stuff You Missed In History Class (easy going)",
-        "d.	High Rollers DND (Wanderluster)",
-      ],
-      answer: "",
-    },
-
-    {
-      ques: "15) Which would you most likely do in your free time?",
-      options: [
-        "a.	Play a video game (Displaced rage)",
-        "b.	Watch a TV series with an involved plot line (adrenaline addict)",
-        "c.	Hang out with friends or family (easy going)",
-        "d.	Go on a short day trip somewhere (Wanderluster)",
-      ],
-      answer: "",
-    },
-    {
-      ques: "16) What is your attention span like?",
-      options: [
-        "a.	I pay attention to things that matter to me (Displaced rage)",
-        "b.	I get most information from memes I see on social media (adrenaline addict)",
-        "c.	I can spend hours on the same activity, whether it’s needed or just something I want to do (easy going)",
-        "d.	I pay attention to things presented in an interesting way (Wanderluster)",
-      ],
-      answer: "",
-    },
-    {
-      ques:
-        "17) Out of the following, which fictional or non-fictional world would you rather exist in?",
-      options: [
-        "a.	Rick and Morty universe (Displaced rage)",
-        "b.	Star Wars (adrenaline addict)",
-        "c.	 Disney universe (easy going)",
-        "d.	 The Game of Thrones universe (Wanderluster)",
-      ],
-      answer: "",
-    },
-  ];
+        ques: "3) Out of the following, which game do you like best?",
+        options: [
+          "a.	Borderlands",
+          " b.	Halo",
+          "c.	Mario Kart",
+          "d.	Rocket League",
+        ],
+        answer: "",
+      },
+      {
+        ques: "4) 	Out of the following, which podcast do you like best?",
+        options: [
+          "a.	The NoSleep Podcast",
+          "b.	The Adventure Zone",
+          "c.	Stuff You Missed In History Class",
+          "d.	The Joe Rogan Experience",
+        ],
+        answer: "",
+      },
+      {
+        ques: "5) Which would you most likely do in your free time?",
+        options: [
+          "a.	Play a video game",
+          "b.	Watch a TV series with an involved plot line",
+          "c.	Hang out with friends or family",
+          "d.	Go to the gym",
+        ],
+        answer: "",
+      },
+  
+      {
+        ques: "6)	What is your attention span like?",
+        options: [
+          "a.	I pay attention to things that matter to me",
+          "b.	I get most information from memes I see on social media",
+          "c.	I can spend hours on the same activity, whether it’s needed or just something I want to do",
+          "d.	I pay attention to things presented in an interesting way",
+        ],
+        answer: "",
+      },
+      {
+        ques:
+          "7)	Out of the following, which fictional or non-fictional world would you rather exist in?",
+        options: [
+          "a.	Rick and Morty universe",
+          "b.	Star Wars",
+          "c.	Disney universe",
+          "d.	The Marvel or DC universe",
+        ],
+        answer: "",
+      }
+];
 
   matchMeEL.on("click", function () {
  console.log("heeeelp");
