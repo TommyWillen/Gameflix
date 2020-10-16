@@ -193,8 +193,10 @@ $(document).ready(function () {
   matchMeEL.on("click", function () {
  console.log("heeeelp");
       // for (let i = 0; i < questions.length; i++){
-        let questionEl = $("<button>").text(questions[i]);
-        $("displayQs").append(questionEl);
+    questionEl = $("<p>" + questions.ques + "<p>");
+    $("#displayQs").append(questionEl);
+        
+        
   
       // };
 
