@@ -30,17 +30,22 @@ body{
     
 }
 
+html{
+    background-color: black;
+}
+
 #matchMe{
     
     border-radius: 12px;
     background-color: lightgray;
+    border: 2px solid black;
     
 }
 
 #displayQs{
 
     background-color: lightgray;
-    background-image: url(../img/film.1.png);
+    background-image: url(../img/film.3.png);
     padding: 20px;
     color:white;
 
@@ -50,8 +55,28 @@ p, pre, ul {
     margin: 30px 0 20px 0;
 }
 
-#displayQs:img{
-    opacity: .3;
+#myMatchesG{
+    
 }
+
+#refresh-movie:hover {
+    background-color: rgb(129, 126, 126) !important;
+
+}
+#save-movie:hover {
+    background-color: rgb(129, 126, 126) !important;
+
+}
+#save-game:hover {
+    background-color: rgb(129, 126, 126) !important;
+
+}
+
+#refresh-game:hover {
+    background-color: rgb(129, 126, 126) !important;
+
+}
+
+
 
 
