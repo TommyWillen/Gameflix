@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset=“UTF-8"> <meta name=“viewport” content=“width=device-width,
+    initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Your Results</title>
+  </head>
+     <!-- <div class="uk-card uk-card-default uk-width-1-2@m"> -->
+    <!-- <div class="uk-card-header">
+        <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+                <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+            </div>
+            <div class="uk-width-expand">
+                <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="uk-card-footer">
+        <a href="#" class="uk-button uk-button-text">Read more</a>
+    </div>
+</div> --> 
+    <div>
+      <h1 class="uk-heading-small uk-heading-line uk-text-center">
+        <span>GameFlix</span>
+      </h1>
+    </div>
+    <div
+      class="uk-grid-small uk-child-width-expand@s uk-text-center uk-grid-match"
+      uk-grid
+    >
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+              <div class="uk-width-auto">
+                <!-- <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg"> -->
+              </div>
+              <div class="uk-width-expand">
+                <h3
+                  class="uk-card-title uk-margin-remove-bottom"
+                  id="movie-name"
+                >
+                  This is the movie title
+                </h3>
+                <!-- <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p> -->
+              </div>
+            </div>
+          </div>
+          <div class="uk-card-body">
+            <img
+              src="https://mediad.publicbroadcasting.net/p/wuis/files/styles/x_large/public/202002/marvel-star-wars-allegiance.jpg"
+              id="movie-poster"
+            />
+          </div>
+          <div class="uk-card-footer" id="movie-info">
+            <!-- <a href="#" class="uk-button uk-button-text" >Read more</a> -->
+            <p>Genre: <span id="movie-genres">Testing</span></p>
+            <p>Overview: <span id="movie-overview">testing</span></p>
+            <p>Release: <span id="movie-release"></span></p>
+            <p>Rating: <span id="movie-rating"></span></p>
+            <br>
+            <br>
+            <button class="uk-button uk-button-default" id="save-movie">Save</button>
+            <button class="uk-button uk-button-default" id="refresh-movie">New Results</button>
+            
+            
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+              <div class="uk-width-auto">
+                <!-- <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg"> -->
+              </div>
+              <div class="uk-width-expand">
+                <h3
+                  class="uk-card-title uk-margin-remove-bottom"
+                  id="game-name"
+                >
+                  Game name
+                </h3>
+                <!-- <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p> -->
+              </div>
+            </div>
+          </div>
+          <div class="uk-card-body">
+            <img
+              src="https://i.pinimg.com/originals/27/b7/e1/27b7e1258e4662a226bbd3549e785bf5.jpg"
+              id="game-poster"
+            />
+          </div>
+          <div class="uk-card-footer" id="movie-info">
+            <!-- <a href="#" class="uk-button uk-button-text" >Read more</a> -->
+            <p>Genre: <span id="game-genres">Testing</span></p>
+            <p>Overview: <span id="game-tags">testing</span></p>
+            <p>Release: <span id="game-release"></span></p>
+            <p>Rating: <span id="game-rating"></span></p>
+            <p>Playtime: <span id="game-playtime"></span></p>
+            <button class="uk-button uk-button-default" id="save-game">Save</button>
+            <button class="uk-button uk-button-default" id="refresh-game">New Results</button>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <p id="movie-name"></p>
+      <img id="movie-poster" />
+      <div>
+        <p id="movie-genres"></p>
+        <p id="movie-overview"></p>
+        <p id="movie-release"></p>
+        <p id="movie-rating"></p>
+      </div>
+    </div>
+    <div class="comtainer">
+      <div>
+        <p id="game-name"></p>
+      </div>
+      <div>
+        <img id="game-poster" />
+        <p id="game-genres"></p>
+        <p id="game-tags"></p>
+      </div>
+      <p id="game-release"></p>
+      <p id="game-rating"></p>
+      <p id="game-playtime"></p>
+    </div>
+    <div class="uk-card uk-card-default uk-width-1-2@m">
+      <div class="uk-card-header">
+        <div class="uk-grid-small uk-flex-middle" uk-grid>
+          <div class="uk-width-auto">
+            <!-- <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg"> -->
+          </div>
+          <div class="uk-width-expand">
+            <h3 class="uk-card-title uk-margin-remove-bottom" id="movie-name">
+              This is the movie title
+            </h3>
+            <!-- <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p> -->
+          </div>
+        </div>
+      </div>
+      <div class="uk-card-body">
+        <img
+          src="https://mediad.publicbroadcasting.net/p/wuis/files/styles/x_large/public/202002/marvel-star-wars-allegiance.jpg"
+          id="movie-poster"
+        />
+      </div>
+      <div class="uk-card-footer" id="movie-info">
+        <!-- <a href="#" class="uk-button uk-button-text" >Read more</a> -->
+        <p>Genre: <span id="movie-genres">Testing</span></p>
+
+        <p>Overview: <span id="movie-overview">testing</span></p>
+
+        <p>Release: <span id="movie-release"></span></p>
+
+        <p>Rating: <span id="movie-rating"></span></p>
+        
+      </div>
+    </div>
+    <div class="uk-card uk-card-default uk-width-1-2@m">
+      <div class="uk-card-header">
+        <div class="uk-grid-small uk-flex-middle" uk-grid>
+          <div class="uk-width-auto">
+            <!-- <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg"> -->
+          </div>
+          <div class="uk-width-expand">
+            <h3 class="uk-card-title uk-margin-remove-bottom" id="game-name">
+              Game name
+            </h3>
+            <!-- <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p> -->
+          </div>
+        </div>
+      </div>
+      <div class="uk-card-body">
+        <img
+          src="https://i.pinimg.com/originals/27/b7/e1/27b7e1258e4662a226bbd3549e785bf5.jpg"
+          id="game-poster"
+        />
+      </div>
+      <div class="uk-card-footer" id="movie-info">
+        <!-- <a href="#" class="uk-button uk-button-text" >Read more</a> -->
+        <p>Genre: <span id="game-genres"></span></p>
+        <p>Overview: <span id="game-tags"></span></p>
+        <p>Release: <span id="game-release"></span></p>
+        <p>Rating: <span id="game-rating"></span></p>
+        <p>Playtime: <span id="game-playtime"></span></p>
+        <button class="uk-button uk-button-default">Save</button>
+        <button class="uk-button uk-button-default">New Results</button>
+        
+      </div>
+    </div>
+    <br>
+    <div>
+     
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
+  </body>
+</html>
+
+<!-- 
+    let movieNameEl = $("#movie-name");
+    let moviePosterEl = $("#movie-poster");
+    let movieGenresEl = $("#movie-genres");
+    let movieOverviewEl = $("#movie-overview");
+    let movieReleaseEl = $("#movie-release");
+    let movieRatingEl = $("#movie-rating");
+    let gameNameEl = $("#game-name");
+    let gamePosterEl = $("#game-poster");
+    let gameGenresEl = $("#game-genres");
+    let gameTagsEl = $("#game-tags");
+    let gameReleaseEl = $("#game-release");
+    let gameRatingEl = $("#game-rating");
+    let gamePlaytimeEl = $("#game-playtime");
+
+
+
+
+
+8:17
+Play type (tags).
+    1. id 7: Multiplayer
+    2. id 18: Co-op
+    3. id 31: Singleplayer
+-->
