@@ -68,7 +68,7 @@ $(document).ready(function () {
             for (let i = 0; i < responseM.results[rando].genre_ids.length; i++) {
                 for (let [key, value] of Object.entries(movieGenreIds)) {
                     if (key == responseM.results[rando].genre_ids[i]) {
-                     movieGenresEl.append(value);
+                     movieGenresEl.append(value + "|");
                     }
                 }
             }
@@ -94,13 +94,13 @@ function displayGameInfo() {
         gameNameEl.html(responseG.results[randa].name);
         gamePosterEl.attr("src", responseG.results[randa].background_image);
         for (let i = 0; i < responseG.results[randa].genres.length; i++) {
-            gameGenresEl.append(responseG.results[randa].genres[i].name + " ");
+            gameGenresEl.append(responseG.results[randa].genres[i].name + "|");
         }
         // gameGenresEl = responseG.results[randa]
         for (let i = 0; i < responseG.results[randa].tags.length; i++) {
             for (let [key, value] of Object.entries(playTypeObj)) {
                 if (key == responseG.results[randa].tags[i].id) {
-                 gameTagsEl.append(value + " ");
+                 gameTagsEl.append(value + "|");
                 }
             }
         }
