@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    let questRoleEl = $("#quest-role");
     let movieNameEl = $("#movie-name");
     let moviePosterEl = $("#movie-poster");
     let movieGenresEl = $("#movie-genres");
@@ -112,10 +113,10 @@ function displayGameInfo() {
 displayGameInfo();
 
 function displayQuestRole () {
-    let questRole = localStorage.getItem("Stored-Character-Class", storedResultsObj);
-    console.log(questRole);
+    let questRole = JSON.parse(localStorage.getItem("Stored-Character-Class"));
+    console.log(questRole.name);
 
-    $(questRoleEl).html(questRole);
+    $(questRoleEl).text(questRole.name);
 }
 displayQuestRole();
 
