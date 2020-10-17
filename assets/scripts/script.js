@@ -210,7 +210,8 @@ $(document).ready(function () {
       DisplacedRageScore = 0;
       AdrenalineAddictScore = 0;
       EasyGoingScore = 0;
-      questNum = 0
+      questNum = 0;
+      $("#matchMe").hide();
       //    empties the div if the user wants to start over.
       $("#displayQs").empty();
       // Change the displayQs into a div
