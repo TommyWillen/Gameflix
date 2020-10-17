@@ -68,7 +68,7 @@ $(document).ready(function () {
             for (let i = 0; i < responseM.results[rando].genre_ids.length; i++) {
                 for (let [key, value] of Object.entries(movieGenreIds)) {
                     if (key == responseM.results[rando].genre_ids[i]) {
-                     movieGenresEl.append(value);
+                     movieGenresEl.append(value + "|");
                     }
                 }
             }
