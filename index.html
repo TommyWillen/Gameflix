@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
+    <link
       rel="stylesheet"
-      href="style.css"
-    /> -->
+      href="./assets/stylesheets/style.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css"
     />
     <title>Gameflix</title>
   </head>
-  <body class="uk-background-secondary uk-light uk-padding uk-panel">
-    <div class="uk-position-relative">
+  <body  data-src="assets/img/film.jpg" class="uk-background-secondary uk-light uk-padding ">
+    
       <div class="uk-position-top">
         <nav
           class="uk-navbar-container uk-navbar-transparent uk-sticky"
@@ -22,14 +22,14 @@
         >
           <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="#">HOME</a></li>
-              <li><a href="#">My Matches </a></li>
+              <li class="uk-active"><a href="index.html">HOME</a></li>
+              <li><a href="mymatches.html">My Matches </a></li>
             </ul>
           </div>
         </nav>
       </div>
       <h3 style="text-align: center">Welcome to</h3>
-      <h1 class="uk-heading-xlarge uk-heading-medium uk-text-center">
+      <h1 class="uk-heading-xlarge uk-text-center">
         GameFlix!
       </h1>
 
@@ -39,16 +39,16 @@
       </p>
 
       <div
-        class="uk-container uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-        data-src="assets/img/test2.jpg"
+      styling="opacity: 0.3" class="uk-container uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+        data-src="assets/img/bgresults.jpg"
         uk-img
       >
         <div
           style="text-align: center"
-          class="uk-grid-column uk-grid-row-small uk-child-width-1-1@s"
-          uk-grid
+          class="uk-grid-column uk-child-width-1-1@s"
+          
         >
-          <button
+          <button style="font-size: xx-large; border-radius: 12px;"
             id="matchMe"
             class="uk-text-center uk-button-secondary uk-button-large uk-text-bold"
           >
@@ -56,10 +56,10 @@
           </button>
         </div>
       </div>
-      <div class="uk-container" id="displayQs">
+      <div id="displayQs" class="uk-container">
         
       </div>
-    </div>
+    
     <div></div>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
