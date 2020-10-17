@@ -111,6 +111,14 @@ function displayGameInfo() {
 }
 displayGameInfo();
 
+function displayQuestRole () {
+    let questRole = localStorage.getItem("Stored-Character-Class", storedResultsObj);
+    console.log(questRole);
+
+    $(questRoleEl).html(questRole);
+}
+displayQuestRole();
+
 $("#refresh-movie").on("click", function(){
     movieNameEl.empty();
     movieGenresEl.empty();
