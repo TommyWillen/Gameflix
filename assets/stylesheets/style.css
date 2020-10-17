@@ -60,20 +60,20 @@ p, pre, ul {
 }
 
 #refresh-movie:hover {
-    background-color: rgb(129, 126, 126);
+    background-color: rgb(129, 126, 126) !important;
 
 }
 #save-movie:hover {
-    background-color: rgb(129, 126, 126);
+    background-color: rgb(129, 126, 126) !important;
 
 }
 #save-game:hover {
-    background-color: rgb(129, 126, 126);
+    background-color: rgb(129, 126, 126) !important;
 
 }
 
 #refresh-game:hover {
-    background-color: rgb(129, 126, 126);
+    background-color: rgb(129, 126, 126) !important;
 
 }
 
