@@ -59,6 +59,24 @@ p, pre, ul {
     
 }
 
+#refresh-movie:hover {
+    background-color: rgb(129, 126, 126);
+
+}
+#save-movie:hover {
+    background-color: rgb(129, 126, 126);
+
+}
+#save-game:hover {
+    background-color: rgb(129, 126, 126);
+
+}
+
+#refresh-game:hover {
+    background-color: rgb(129, 126, 126);
+
+}
+
 
 
 
