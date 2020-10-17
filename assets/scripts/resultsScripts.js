@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    let questRoleEl = $("#quest-role");
     let movieNameEl = $("#movie-name");
     let moviePosterEl = $("#movie-poster");
     let movieGenresEl = $("#movie-genres");
@@ -110,6 +111,14 @@ function displayGameInfo() {
     })
 }
 displayGameInfo();
+
+function displayQuestRole () {
+    let questRole = JSON.parse(localStorage.getItem("Stored-Character-Class"));
+    console.log(questRole.name);
+
+    $(questRoleEl).text(questRole.name);
+}
+displayQuestRole();
 
 $("#refresh-movie").on("click", function(){
     movieNameEl.empty();
