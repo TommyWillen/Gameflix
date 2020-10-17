@@ -21,3 +21,19 @@ background-color:rgb(177, 169, 169) ;
     font-size: 40px;
     text-align: center;
 }
+body{
+    box-sizing: border-box;
+    width: auto;
+    height: 100vh;
+    background-color: black;
+    
+}
+
+#matchMe{
+    
+    border-radius: 12px;
+    background-color: lightgray;
+    
+}
+
+
