@@ -1,12 +1,16 @@
 body{
     box-sizing: border-box;
     width: auto;
-    height: auto;
-}
-
-button{
-
-    text-align: center;
+    height: 100vh;
+    background-color: black;
     
 }
+
+#matchMe{
+    
+    border-radius: 12px;
+    background-color: lightgray;
+    
+}
+
 
