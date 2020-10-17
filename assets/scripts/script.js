@@ -453,8 +453,10 @@ $(document).ready(function () {
               questNum++
               displaySinglePlayerQuestions()
           } else if ($(this).attr("data-value") == "Wanderluster") {
+            console.log("oops!")
               WanderlusterScore++
               questNum++
+              displaySinglePlayerQuestions()
           }
       }
   })
@@ -497,63 +499,111 @@ $(document).ready(function () {
       quizScoreObj.sort(compare);
       console.log(quizScoreObj);
       if (quizScoreObj[0].name == "LiveLaughLove") {
-          gameGenre = "14,40";
-          movieGenre = "35,10402,10749";
-          console.log(gameGenre);
-          console.log(movieGenre);
-          questRole = "LiveLaughLove";
-          console.log(questRole);
-      } else if (quizScoreObj[0].name == "Bruh") {
-          gameGenre = "1,2,15";
-          movieGenre = "28,35,37";
-          console.log(gameGenre);
-          console.log(movieGenre);
-          questRole = "Bruh";
-          console.log(questRole);
-      } else if (quizScoreObj[0].name == "Puzzle") {
-          gameGenre = "7,10,51";
-          movieGenre = "18,80,36,27,9648,878";
-          console.log(gameGenre);
-          console.log(movieGenre);
-          questRole = "Puzzle";
-          console.log(questRole);
-      } else if (quizScoreObj[0].name == "NostalgicComedian") {
-          gameGenre = "11,83";
-          movieGenre = "28,35,878,9648";
-          console.log(gameGenre);
-          console.log(movieGenre);
-          questRole = "NostalgicComedian";
-          console.log(questRole);
-      } else if (quizScoreObj[0].name == "Wanderluster") {
-          gameGenre = "3,5,51,59";
-          movieGenre = "12,18,14,27,878";
-          console.log(gameGenre);
-          console.log(movieGenre);
-          questRole = "Wanderluster";
-          console.log(questRole);
-      } else if (quizScoreObj[0].name == "DisplacedRage") {
-          gameGenre = "2,6,15,59";
-          movieGenre = "28,36,27,53,37,10752";
-          console.log(gameGenre);
-          console.log(movieGenre);
-          questRole = "DisplacedRage";
-          console.log(questRole);
-      } else if (quizScoreObj[0].name == "AdrenalineAddict") {
-          gameGenre = "3,4,59";
-          movieGenre = "12,28,14,53,878,37,10752";
-          console.log(gameGenre);
-          console.log(movieGenre);
-          questRole = "AdrenalineAddict";
-          console.log(questRole);
-      } else if (quizScoreObj[0].name == "EasyGoing") {
-          gameGenre = "7,17,19,28,34";
-          movieGenre = "16,99,10751,36,10402";
-          console.log(gameGenre);
-          console.log(movieGenre);
-          questRole = "EasyGoing";
-          console.log(questRole);
-      }
-      window.location.href = "./test.html"
+        let resultsObj = {
+             name: "LiveLaughLove",
+             gameGenre: "14,40",
+             movieGenre: "35,10402,10749",
+             playType: gamePlayType,
+             platform: gamePlatform,
+         }
+         let storedResultsObj = JSON.stringify(resultsObj);
+         localStorage.setItem("Stored-Character-Class", storedResultsObj);
+         console.log(gameGenre);
+         console.log(movieGenre);
+         console.log(questRole);
+     } else if (quizScoreObj[0].name == "Bruh") {
+         let resultsObj = {
+             name: "Bruh",
+             gameGenre: "1,2,15",
+             movieGenre: "28,35,37",
+             playType: gamePlayType,
+             platform: gamePlatform,
+         }
+         let storedResultsObj = JSON.stringify(resultsObj);
+         localStorage.setItem("Stored-Character-Class", storedResultsObj);
+         console.log(gameGenre);
+         console.log(movieGenre);
+         console.log(questRole);
+     } else if (quizScoreObj[0].name == "Puzzle") {
+         let resultsObj = {
+             name: "Puzzle",
+             gameGenre: "7,10,51",
+             movieGenre: "18,80,36,27,9648,878",
+             playType: gamePlayType,
+             platform: gamePlatform,
+         }
+         let storedResultsObj = JSON.stringify(resultsObj);
+         localStorage.setItem("Stored-Character-Class", storedResultsObj);
+         console.log(gameGenre);
+         console.log(movieGenre);
+         console.log(questRole);
+     } else if (quizScoreObj[0].name == "NostalgicComedian") {
+         let resultsObj = {
+             name: "NostalgicComedian",
+             gameGenre: "11,83",
+             movieGenre: "28,35,878,9648",
+             playType: gamePlayType,
+             platform: gamePlatform,
+         }
+         let storedResultsObj = JSON.stringify(resultsObj);
+         localStorage.setItem("Stored-Character-Class", storedResultsObj);
+         console.log(gameGenre);
+         console.log(movieGenre);
+         console.log(questRole);
+     } else if (quizScoreObj[0].name == "Wanderluster") {
+         let resultsObj = {
+             name: "Wanderluster",
+             gameGenre: "3,5,51,59",
+             movieGenre: "12,18,14,27,878",
+             playType: gamePlayType,
+             platform: gamePlatform,
+         }
+         let storedResultsObj = JSON.stringify(resultsObj);
+         localStorage.setItem("Stored-Character-Class", storedResultsObj);
+         console.log(gameGenre);
+         console.log(movieGenre);
+         console.log(questRole);
+     } else if (quizScoreObj[0].name == "DisplacedRage") {
+         let resultsObj = {
+             name: "DisplacedRage",
+             gameGenre: "2,6,15,59",
+             movieGenre: "28,36,27,53,37,10752",
+             playType: gamePlayType,
+             platform: gamePlatform,
+         }
+         let storedResultsObj = JSON.stringify(resultsObj);
+         localStorage.setItem("Stored-Character-Class", storedResultsObj);
+         console.log(gameGenre);
+         console.log(movieGenre);
+         console.log(questRole);
+     } else if (quizScoreObj[0].name == "AdrenalineAddict") {
+         let resultsObj = {
+             name: "AdrenalineAddict",
+             gameGenre: "3,4,59",
+             movieGenre: "12,28,14,53,878,37,10752",
+             playType: gamePlayType,
+             platform: gamePlatform,
+         }
+         let storedResultsObj = JSON.stringify(resultsObj);
+         localStorage.setItem("Stored-Character-Class", storedResultsObj);
+         console.log(gameGenre);
+         console.log(movieGenre);
+         console.log(questRole);
+     } else if (quizScoreObj[0].name == "EasyGoing") {
+         let resultsObj = {
+             name: "EasyGoing",
+             gameGenre: "7,17,19,28,34",
+             movieGenre: "16,99,10751,36,10402",
+             playType: gamePlayType,
+             platform: gamePlatform,
+         }
+         let storedResultsObj = JSON.stringify(resultsObj);
+         localStorage.setItem("Stored-Character-Class", storedResultsObj);
+         console.log(gameGenre);
+         console.log(movieGenre);
+         console.log(questRole);
+     }
+      window.location.href = "./assets/pages/results.html";
   }
 
   function compare(a, b) {
