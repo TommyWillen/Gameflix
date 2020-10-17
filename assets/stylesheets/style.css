@@ -8,23 +8,24 @@
     background-color: rgb(177, 169, 169);
 }
 #save-movie {
-    background-color:gainsboro;
+    background-color:gainsboro !important;
 }
 #save-game {
-background-color:gainsboro;
+background-color:gainsboro !important;
+
 }
 #refresh-game {
 background-color:rgb(177, 169, 169) ;
 }
 #results {
-    background-color:rgb(189, 219, 238);
+    background-color:rgb(163, 169, 173);
     font-size: 40px;
     text-align: center;
 }
 body{
     box-sizing: border-box;
-    width: auto;
-    height: 100vh;
+    width:auto ;
+    height: auto;
     background-color: black;
     
 }
