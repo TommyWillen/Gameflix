@@ -54,8 +54,7 @@ $(document).ready(function () {
 
     function displayMovieInfo() {
         let movieGenre = 878;
-        let notMovieGenre = 10751;
-        let movieURL = "https://api.themoviedb.org/3/discover/movie?api_key=8f8b7c9d8d66c3bf3418011e60cf74d6&language=en-US&sort_by=vote_average.desc&include_adult=false&include_video=false&page=1&vote_count.gte=400&vote_average.gte=8&with_genres=" + movieGenre + "&without_genres=" + notMovieGenre
+        let movieURL = "https://api.themoviedb.org/3/discover/movie?api_key=8f8b7c9d8d66c3bf3418011e60cf74d6&language=en-US&sort_by=vote_average.desc&include_adult=false&include_video=false&page=1&vote_count.gte=400&vote_average.gte=8&with_genres=" + movieGenre
 
         $.ajax({
             url: movieURL,
@@ -83,9 +82,9 @@ displayMovieInfo();
 function displayGameInfo() {
     let gameGenre = 6;
     let gamePlatform = 1;
-    let gameStore = 1;
+
     let gamePlayType = 31;
-    let gameURL = "https://api.rawg.io/api/games?genres=" + gameGenre + "&platforms=" + gamePlatform + "&stores=" + gameStore + "&tags=" + gamePlayType + "&page_size=30"
+    let gameURL = "https://api.rawg.io/api/games?genres=" + gameGenre + "&platforms=" + gamePlatform + "&tags=" + gamePlayType + "&page_size=30"
     $.ajax({
         url: gameURL,
         method: "GET",
@@ -144,5 +143,53 @@ $("#save-game").on("click", function(){
     storedGameMatches = JSON.stringify(gameMatches);
     localStorage.setItem("game-matches", storedGameMatches);
 })
+for (let i = 0; i < gameMatches.length; i++) {
+    let gameMatchEl = $("<div>");
+    gameMatchEl.attr("class", "uk-grid-small");
+    gameMatchEl.attr("uk-grid", "");
+    let gameMatchTextEl = $("<div>").text(gameMatches[i])
+    gameMatchTextEl.attr("class", "uk-width-expand");
+    gameMatchTextEl.attr("uk-leader", "fill: -");
+    gameMatchTextEl.attr("data-index", i);
+    let gameCloseButtonEl = $("<button>").text("Played It");
+    gameCloseButtonEl.attr("class", "uk-button uk-button-default uk-button-small game-close-btn");
+    gameMatchesListEl.append(gameMatchEl);
+    gameMatchEl.append(gameMatchTextEl);
+    gameMatchEl.append(gameCloseButtonEl);
+
+}
+for (let i = 0; i < movieMatches.length; i++) {
+    let movieMatchEl = $("<div>");
+    movieMatchEl.attr("class", "uk-grid-small");
+    movieMatchEl.attr("uk-grid", "");
+    let movieMatchTextEl = $("<div>").text(movieMatches[i]);
+    movieMatchTextEl.attr("class", "uk-width-expand");
+    movieMatchTextEl.attr("uk-leader", "fill: -");
+    movieMatchTextEl.attr("data-index", i );
+    let movieCloseButtonEl = $("<button>").text("Seen It");
+    movieCloseButtonEl.attr("class", "uk-button uk-button-default uk-button-small movie-close-btn");
+    movieMatchesListEl.append(movieMatchEl);
+    movieMatchEl.append(movieMatchTextEl);
+    movieMatchEl.append(movieCloseButtonEl);
+}
+
+$(document).on("click", ".game-close-btn", playedItClose)
+
+function playedItClose() {
+    gameMatches.splice(parseInt($(this).prev().attr("data-index")), 1);
+    $(this).parent().remove();
+    storedGameMatches = JSON.stringify(gameMatches);
+    localStorage.setItem("game-matches", storedGameMatches);
+}
+
+$(document).on("click", ".movie-close-btn", seenItClose)
+
+function seenItClose() {
+    movieMatches.splice(parseInt($(this).prev().attr("data-index")), 1);
+    $(this).parent().remove();
+    storedMovieMatches = JSON.stringify(movieMatches);
+    localStorage.setItem("movie-matches", storedMovieMatches);
+}
 
 })
+
