@@ -56,10 +56,17 @@ html{
 
 #matchMe {
   border-radius: 12px;
-  background-color: lightgray !important;
-  border: 1px solid black;
+  background-color:#d5e9f791 !important;
+  color:#171E22;
+  border: 3px solid black;
 }
+#gameFlix {
+color: red;
+font-weight: bold;
+font-family: 'Krona One', sans-serif;
 
+
+}
 #displayQs {
   background-image: url(../img/film.7.jpg);
   padding: 20px;
@@ -67,7 +74,7 @@ html{
 }
 
 #displayQs button{
-    background-color: rgba(211, 211, 211, 0.795)!important;
+    background-color:#6886b3ad!important;
     border: 1px solid black;
     
 }

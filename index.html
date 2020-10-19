@@ -3,68 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="./assets/stylesheets/style.css"
-    />
+    <link rel="stylesheet" href="./assets/stylesheets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css"
     />
     <title>Gameflix</title>
   </head>
-  <body class="uk-background-secondary uk-light uk-padding ">
+  <body class="uk-background-secondary uk-light uk-padding">
+    <div class="uk-position-top">
+      <nav
+        class="uk-navbar-container uk-navbar-transparent uk-sticky"
+        uk-navbar
+      >
+        <div class="uk-navbar-left">
+          <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="index.html">HOME</a></li>
+            <li><a href="./assets/pages/mymatches.html">My Matches </a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     
-      <div class="uk-position-top">
-        <nav
-          class="uk-navbar-container uk-navbar-transparent uk-sticky"
-          uk-navbar
-        >
-          <div class="uk-navbar-left">
-            <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="index.html">HOME</a></li>
-              <li><a href="./assets/pages/mymatches.html">My Matches </a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
       <h3 style="text-align: center">Welcome to</h3>
-      <h1 class="uk-heading-xlarge uk-text-center">
-        GameFlix!
-      </h1>
+      <h1 id="gameFlix" class="uk-heading-xlarge uk-text-center">GameFlix!</h1>
 
-      <p class="uk-text-center">
+      <p style="color: white" class="uk-text-center">
         Complete the brief survey below to find your gaming and film matches.
         Click <b>MatchMe!</b> to begin.
       </p>
-
-      <div
-       class="uk-container uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-        data-src="assets/img/bgresults.jpg"
-        uk-img
-      >
-        <div
-          style="text-align: center"
-          class="uk-grid-column uk-child-width-1-1@s"
-          
-        >
-          <button style="font-size: xx-large; border-radius: 12px;"
-            id="matchMe"
-            class="uk-text-center uk-button-secondary uk-button-large uk-text-bold"
-          >
-            MatchMe!
-          </button>
-        </div>
-      </div>
-      <div styl="color: white" id="displayQs" class="uk-container  uk-margin-top">
-        
-      </div>
     
+    <div
+      class="uk-container uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+      data-src="assets/img/bgresults.jpg"
+      uk-img
+    >
+      <div
+        style="text-align: center"
+        class="uk-grid-column uk-child-width-1-1@s"
+      >
+        <button
+          style="font-size: xx-large; border-radius: 12px"
+          id="matchMe"
+          class="uk-text-center uk-button-secondary uk-button-large uk-text-bold"
+        >
+          MatchMe!
+        </button>
+      </div>
+    </div>
+    <div
+      styl="color: white"
+      id="displayQs"
+      class="uk-container uk-margin-top"
+    ></div>
+
     <div></div>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/scripts/script.js"></script>
-
   </body>
 </html>
