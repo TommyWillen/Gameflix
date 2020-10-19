@@ -1,80 +1,106 @@
+body {
+  box-sizing: border-box;
+  widows: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
 .left-margin {
-    margin-left: 30px !important;
+  margin-left: 30px !important;
 }
+
 .right-margin {
-    margin-right: 30px !important;
+  margin-right: 30px !important;
 }
+
 #refresh-movie {
-    background-color: rgb(177, 169, 169) !important;
+  background-color: rgb(177, 169, 169) !important;
 }
-#save-movie {
-    background-color: rgb(177, 169, 169) !important;
-}
-#save-game {
-background-color:rgb(177, 169, 169) !important;
-
-}
-#refresh-game {
-background-color:rgb(177, 169, 169) !important ;
-}
-#results {
-    background-color:rgb(163, 169, 173);
-    font-size: 40px;
-    text-align: center;
-}
-body{
-    box-sizing: border-box;
-    width:auto ;
-    height: auto;
-    background-color: black;
-    
-}
-
-html{
-    background-color: black;
-}
-
-#matchMe{
-    
-    border-radius: 12px;
-    background-color: lightgray;
-    border: 2px solid black;
-    
-}
-
-#displayQs{
-
-   
-    background-image: url(../img/game.1.jpg);
-    padding: 20px;
-    color:white;
-
-}
-
-p, pre, ul {
-    margin: 30px 0 20px 0;
-}
-
-
 
 #refresh-movie:hover {
-    background-color: rgb(129, 126, 126) !important;
-
+  background-color: rgb(129, 126, 126) !important;
 }
+
+#save-movie {
+  background-color: rgb(177, 169, 169) !important;
+}
+
 #save-movie:hover {
-    background-color: rgb(129, 126, 126) !important;
-
+  background-color: rgb(129, 126, 126) !important;
 }
-#save-game:hover {
-    background-color: rgb(129, 126, 126) !important;
 
+#save-game {
+  background-color: rgb(177, 169, 169) !important;
+}
+
+#save-game:hover {
+  background-color: rgb(129, 126, 126) !important;
+}
+
+#refresh-game {
+  background-color: rgb(177, 169, 169) !important ;
 }
 
 #refresh-game:hover {
-    background-color: rgb(129, 126, 126) !important;
+  background-color: rgb(129, 126, 126) !important;
+}
+
+#results {
+  background-color: rgb(163, 169, 173);
+  font-size: 40px;
+  text-align: center;
+}
+
+#matchMe {
+  border-radius: 12px;
+  background-color: lightgray !important;
+  border: 2px solid black;
+}
+
+#displayQs {
+  background-image: url(../img/film.7.jpg);
+  padding: 20px;
+  color: white;
+}
+
+#displayQs button{
+    background-color: lightgray!important;
+}
+
+#playWatch {
+  background-image: url("../img/game.2.jpg");
+}
+
+#game-matches-list {
+  margin-bottom: 20px;
+  
+  color: white;
+}
+
+#movie-matches-list {
+  margin-bottom: 20px;
+  
+  color: white;
+}
+
+div h3{
+
+    color: black !important;
+    font-weight: bolder;
+    font-size: x-large;
 
 }
 
+div button{
 
+    background-color: blue !important;
+    font-weight: bolder;
+    font-size: x-large;
 
+}
 
+p,
+pre,
+ul {
+  margin: 30px 0 20px 0;
+}
