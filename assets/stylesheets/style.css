@@ -1,11 +1,13 @@
 body {
   box-sizing: border-box;
-  widows: 100vw;
+  width: 100vw;
   height: 100vh;
   background-color: black;
 }
-html{
-    background-color: black;
+html {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
 }
 
 .left-margin {
@@ -56,59 +58,62 @@ html{
 
 #matchMe {
   border-radius: 12px;
-  background-color:#d5e9f791 !important;
-  color:#171E22;
+  background-color: #d5e9f791 !important;
+  color: #171e22;
   border: 3px solid black;
 }
 #gameFlix {
-color: red;
-font-weight: bold;
-font-family: 'Krona One', sans-serif;
-
-
+  color: #b900f7;
+  font-weight: bold;
+  /* font-family: 'Krona One', sans-serif;  */
+  /* font-family: 'Anton', sans-serif;  */
+  font-family: "Permanent Marker", cursive;
+  /* font-family: 'Russo One', sans-serif; */
+  /* font-family: 'ZCOOL QingKe HuangYou', cursive;  */
 }
+
 #displayQs {
   background-image: url(../img/film.7.jpg);
   padding: 20px;
   color: white;
 }
 
-#displayQs button{
-    background-color:#6886b3ad!important;
-    border: 1px solid black;
-    
+#displayQs button {
+  background-color: #6886b3ad !important;
+  border: 1px solid black;
 }
 
 #playWatch {
-  background-image: url("../img/game.2.jpg");
+  background-image: url("../img/bg.2.png");
+  /* background-color: #490377; */
+}
+#test{
+    background-color: rgba(0, 0, 0, 0.534);
+    padding: 5px;
 }
 
 #game-matches-list {
   margin-bottom: 20px;
-  
+
   color: white;
 }
 
 #movie-matches-list {
   margin-bottom: 20px;
-  
+
   color: white;
 }
 
-div h3{
-
-    color: black !important;
-    font-weight: bolder;
-    font-size: x-large;
-
+div h3 {
+  color: white !important;
+  font-weight: bolder !important;
+  font-size: x-large !important;
 }
 
-div button{
-
-    background-color: grey !important;
-    font-weight: bolder;
-    font-size: x-large;
-
+div button {
+  background-color: grey !important;
+  font-weight: bolder;
+  font-size: x-large;
 }
 
 p,
