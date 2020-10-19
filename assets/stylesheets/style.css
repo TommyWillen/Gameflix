@@ -44,8 +44,8 @@ html{
 
 #displayQs{
 
-    background-color: lightgray;
-    background-image: url(../img/film.3.png);
+   
+    background-image: url(../img/game.1.jpg);
     padding: 20px;
     color:white;
 
@@ -55,9 +55,7 @@ p, pre, ul {
     margin: 30px 0 20px 0;
 }
 
-#myMatchesG{
-    
-}
+
 
 #refresh-movie:hover {
     background-color: rgb(129, 126, 126) !important;
