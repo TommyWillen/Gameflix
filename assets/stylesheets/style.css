@@ -4,6 +4,9 @@ body {
   height: 100vh;
   background-color: black;
 }
+html{
+    background-color: black;
+}
 
 .left-margin {
   margin-left: 30px !important;
@@ -54,7 +57,7 @@ body {
 #matchMe {
   border-radius: 12px;
   background-color: lightgray !important;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 #displayQs {
@@ -95,7 +98,7 @@ div h3{
 
 div button{
 
-    background-color: blue !important;
+    background-color: grey !important;
     font-weight: bolder;
     font-size: x-large;
 
