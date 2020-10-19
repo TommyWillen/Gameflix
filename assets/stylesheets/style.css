@@ -4,6 +4,18 @@ body {
   height: 100vh;
   background-color: black;
 }
+/* body::before {
+  content: "";
+  background-image: url("../img/bg.3.png");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+} */
+
 html {
   background-color: black;
   width: 100vw;
@@ -73,23 +85,28 @@ html {
 }
 
 #displayQs {
-  background-image: url(../img/film.7.jpg);
   padding: 20px;
   color: white;
 }
 
 #displayQs button {
-  background-color: #6886b3ad !important;
+  background-color: #6886b380 !important;
+  color: white;
+  font-weight: normal;
   border: 1px solid black;
+}
+
+#displayQs p {
+  font-size: 20px;
 }
 
 #playWatch {
   background-image: url("../img/bg.2.png");
   /* background-color: #490377; */
 }
-#test{
-    background-color: rgba(0, 0, 0, 0.534);
-    padding: 5px;
+#test {
+  background-color: rgba(0, 0, 0, 0.534);
+  padding: 5px;
 }
 
 #game-matches-list {
