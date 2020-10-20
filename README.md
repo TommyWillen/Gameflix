@@ -98,15 +98,15 @@ In the My Matches page the saved movie and game matches that were stored were di
 
 ### Video Tutorial
 
-Click the image to view my video feature tutorial:
+Click the image to view the video feature tutorial:
 
-[![Start screen to link to youtube video]()]()
+[![Start screen to link to youtube video](assets/img/home.page.png)](https://youtu.be/zNPXIwiTRyg)
 
 ## Installation
 
 Prerequisites\: None
 
-Simply clone it from my repo\:
+Simply clone it from the repo\:
 
 ```
 clone git@github.com:TommyWillen/Gameflix.git
