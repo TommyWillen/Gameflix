@@ -58,7 +58,11 @@ Amber fill out stuff here!
 
 ### Interest Quiz and Question Handlers
 
-Bailey fill out quiz question stuff here
+For the quiz, we created 8 different personalities: The Displaced Rage, The Adrenaline Addict, The Easy Going, The Wanderluster, The Bruh, The Puzzle, The Nostalgic Comedian, and The LiveLaughLove.
+
+Each personality was considered a "bucket" in which we put specific categories (Play Types, Video Game Genres, Movie Genres).
+
+The first question would narrow which gaming platform would be used in the AJAX call. Question two would narrow down the personality types by play type and helped determine which set of questions the user would be shown. There was a set of questions for each play type: single player, co-op player, multiplayer.
 
 Tommy fill out question handlers here
 
@@ -66,11 +70,11 @@ Tommy fill out question handlers here
 
 Tommy fill out ajax storage here
 
-Bailey fill out ajax recall here
+For the AJAX recall, we used the information saved in local storage to get the "Stored-Character-Class" object. We used the information in the object to create variables (e.g. gamePlatform, gamePlayType, etc) that could be used in the API URLs.
 
 #### Character Class Determination
 
-Bailey fill out stuff here
+Still using the "Stored-Character-Class" object from local storage, we were able to pull the name and description of the user's personality result. When the user finishes taking the quiz, they will be presented with the name of their personality along with the description.
 
 ### Ajax Call
 
