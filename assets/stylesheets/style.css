@@ -13,13 +13,17 @@ body {
   width: 100%;
   opacity: 0.25;
   z-index: 0;
-  margin: -30px;
+  margin: -40px;
 }
 
 html {
   background-color:#222 !important;
   width: 100vw;
   height: 100%;
+}
+
+.extra {
+  font-size: 30px;
 }
 
 .left-margin {
@@ -100,18 +104,9 @@ html {
   font-size: 20px;
 }
 
-/* #playWatch {
-  background-image: url("../img/bg.2.png");
-  /* background-color: #490377; */
-} */
-#test {
-  background-color: rgba(0, 0, 0, 0.534);
-  padding: 5px;
-}
 
 #game-matches-list {
   margin-bottom: 20px;
-
   color: white;
 }
 
@@ -132,8 +127,8 @@ div button {
   font-size: x-large;
 }
 
-p,
+/* p,
 pre,
 ul {
   margin: 30px 0 20px 0;
-}
+} */
