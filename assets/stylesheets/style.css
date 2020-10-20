@@ -8,8 +8,7 @@ body {
 
 .overlay {
   background: url("../img/bg.2.png");
-  background-size: contain;
-  position: absolute;
+  position: fixed;
   height: 100% !important;
   width: 100%;
   opacity: 0.25;
