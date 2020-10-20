@@ -5,11 +5,20 @@
   <meta charset=“UTF-8">
   <meta name=“viewport” content=“width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Ranchers&family=Roboto+Mono:wght@500&family=Russo+One&family=ZCOOL+QingKe+HuangYou&display=swap"
+      rel="stylesheet"
+    />
   <link rel="stylesheet" href="../stylesheets/style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
   <title>Your Results</title>
 </head>
 
 <body data-src="assets/img/film.jpg" class="uk-background-secondary uk-light uk-padding">
+  <div class="overlay"></div>
   <div class="uk-position-top">
     <nav class="uk-navbar-container uk-navbar-transparent uk-sticky" uk-navbar>
       <div class="uk-navbar-left">
@@ -20,13 +29,13 @@
       </div>
     </nav>
   </div>
-  <h3 style="text-align: center">Welcome to</h3>
-  <h1 class="uk-heading-xlarge uk-text-center">GameFlix!</h1>
+  
+  <h1 id="gameFlix" class="uk-heading-xlarge uk-text-center">GameFlix!</h1>
   <div>
     <div class="uk-card uk-card-default uk-card-body" id="results">
       You are: The <span id="quest-role"></span>
     </div>
-    <p></p>
+    <p id="role-description"></p>
   </div>
   <div uk-grid></div>
   <div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-grid-match" uk-grid>

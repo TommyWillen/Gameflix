@@ -15,6 +15,11 @@ $(document).ready(function () {
     let gamePlaytimeEl = $("#game-playtime");
     let movieMatchesListEl = $("#movie-matches-list");
     let gameMatchesListEl = $("#game-matches-list");
+    let gameGenre = "";
+    let gamePlatform = "";
+    let gamePlayType = "";
+    let movieGenre = "";
+
     const movieGenreIds = {
         12: "Adventure",
         14: "Fantasy",
@@ -54,8 +59,12 @@ $(document).ready(function () {
     }
 
     function displayMovieInfo() {
-        let movieGenre = 878;
-        let movieURL = "https://api.themoviedb.org/3/discover/movie?api_key=8f8b7c9d8d66c3bf3418011e60cf74d6&language=en-US&sort_by=vote_average.desc&include_adult=false&include_video=false&page=1&vote_count.gte=400&vote_average.gte=8&with_genres=" + movieGenre
+        let questRole = JSON.parse(localStorage.getItem("Stored-Character-Class"));
+        movieGenre = questRole.movieGenre;
+        console.log(movieGenre)
+        randoGenre = movieGenre[Math.floor(Math.random() * movieGenre.length)]
+        console.log(randoGenre)
+        let movieURL = "https://api.themoviedb.org/3/discover/movie?api_key=8f8b7c9d8d66c3bf3418011e60cf74d6&language=en-US&sort_by=vote_average.desc&include_adult=false&include_video=false&page=1&vote_count.gte=400&vote_average.gte=8&with_genres=" + randoGenre;
 
         $.ajax({
             url: movieURL,
@@ -81,11 +90,13 @@ $(document).ready(function () {
 displayMovieInfo();
 
 function displayGameInfo() {
-    let gameGenre = 6;
-    let gamePlatform = 1;
+    let questRole = JSON.parse(localStorage.getItem("Stored-Character-Class"));
+    gameGenre = questRole.gameGenre;
+    gamePlatform = questRole.platform;
+    gamePlayType = questRole.playType;
 
-    let gamePlayType = 31;
-    let gameURL = "https://api.rawg.io/api/games?genres=" + gameGenre + "&platforms=" + gamePlatform + "&tags=" + gamePlayType + "&page_size=30"
+    let gameURL = "https://api.rawg.io/api/games?genres=" + gameGenre + "&platforms=" + gamePlatform + "&tags=" + gamePlayType + "&page_size=30";
+
     $.ajax({
         url: gameURL,
         method: "GET",
@@ -119,6 +130,14 @@ function displayQuestRole () {
     $(questRoleEl).text(questRole.name);
 }
 displayQuestRole();
+
+function displayQuestRoleDescription () {
+    let questRole = JSON.parse(localStorage.getItem("Stored-Character-Class"));
+    console.log(questRole.description);
+
+    $("#role-description").text(questRole.description);
+}
+displayQuestRoleDescription();
 
 $("#refresh-movie").on("click", function(){
     movieNameEl.empty();
