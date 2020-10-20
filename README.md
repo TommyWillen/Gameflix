@@ -34,6 +34,11 @@ View the [github-pages](https://tommywillen.github.io/Gameflix/)
 ## Project Description
 ![Gameflix Gif]()
 
+As an avid gamer and movie-goer
+I want a way to find new games and movies based on my preferences
+So that I can kill boredom
+
+
 ### Collaborators and Roles
 
 - Tommy: Ajax call, local storage, button handlers
