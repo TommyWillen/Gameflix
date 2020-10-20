@@ -19,6 +19,7 @@
     <title>Gameflix</title>
   </head>
   <body class="uk-background-secondary uk-light uk-padding">
+    <div class="overlay"></div>
     <div class="uk-position-top">
       <nav
         class="uk-navbar-container uk-navbar-transparent uk-sticky"
@@ -40,30 +41,28 @@
       Complete the brief survey below to find your gaming and film matches.
       Click <b>MatchMe!</b> to begin.
     </p>
-
-    <div
-      class="uk-container uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-      data-src="assets/img/bgresults.jpg"
-      uk-img
-    >
+    <div class="uk-container uk-box-shadow-bottom uk-flex uk-flex-column uk-flex-center uk-flex-middle">
       <div
-        style="text-align: center"
-        class="uk-grid-column uk-child-width-1-1@s"
+        class=" uk-height-medium uk-width-1-1 uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-background-cover uk-light"
+        data-src="assets/img/bgresults.jpg"
+        uk-img
       >
-        <button
-          style="font-size: xx-large; border-radius: 12px"
-          id="matchMe"
-          class="uk-text-center uk-button-secondary uk-button-large uk-text-bold"
+        <div
+          style="text-align: center"
+          class="uk-grid-column uk-child-width-1-1@s"
         >
-          MatchMe!
-        </button>
+          <button
+            style="font-size: xx-large; border-radius: 12px"
+            id="matchMe"
+            class="uk-text-center uk-button-secondary uk-button-large uk-text-bold"
+          >
+            MatchMe!
+          </button>
+        </div>
       </div>
+      <div id="displayQs" class="uk-container uk-margin-top"></div>
     </div>
-    <div
-      id="displayQs"
-      class="uk-container uk-margin-top"
-    ></div>
- 
+
     <div></div>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>

@@ -1,25 +1,25 @@
 body {
   box-sizing: border-box;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  position: relative;
   background-color: black;
 }
-/* body::before {
-  content: "";
-  background-image: url("../img/bg.3.png");
-  background-size: cover;
+
+.overlay {
+  background: url("../img/bg.2.png");
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.75;
-} */
+  height: 100%;
+  width: 100%;
+  opacity: 0.25;
+  z-index: 0;
+  margin: -30px;
+}
 
 html {
-  background-color: black;
+  background-color:#222 !important;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .left-margin {
@@ -76,7 +76,7 @@ html {
 }
 #gameFlix {
   color: #b900f7;
-  font-weight: bold;
+  font-weight: bold !important ;
   /* font-family: 'Krona One', sans-serif;  */
   /* font-family: 'Anton', sans-serif;  */
   font-family: "Permanent Marker", cursive;
@@ -100,10 +100,10 @@ html {
   font-size: 20px;
 }
 
-#playWatch {
+/* #playWatch {
   background-image: url("../img/bg.2.png");
   /* background-color: #490377; */
-}
+} */
 #test {
   background-color: rgba(0, 0, 0, 0.534);
   padding: 5px;
@@ -117,7 +117,6 @@ html {
 
 #movie-matches-list {
   margin-bottom: 20px;
-
   color: white;
 }
 
