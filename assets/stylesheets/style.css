@@ -73,6 +73,10 @@ html {
   text-align: center;
 }
 
+#matchMe:hover {
+    cursor: pointer;
+}
+
 #matchMe {
   border-radius: 12px;
   background-color: #d5e9f791 !important;
@@ -99,6 +103,10 @@ html {
   color: white;
   font-weight: normal;
   border: 1px solid black;
+}
+
+#displayQs button:hover {
+    cursor: pointer;
 }
 
 #displayQs p {
@@ -128,11 +136,23 @@ div button {
   font-size: x-large;
 }
 
+<<<<<<< HEAD
+#role-description {
+    text-align: center;
+}
+
+/* p,
+pre,
+ul {
+  margin: 30px 0 20px 0;
+} */
+=======
 .game-close-btn, .movie-close-btn {
     z-index: 1;
 
 }
 
+>>>>>>> dev
 #movie-name, #game-name {
     color: #000 !important;
 

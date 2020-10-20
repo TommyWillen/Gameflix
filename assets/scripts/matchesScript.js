@@ -1,12 +1,13 @@
 for (let i = 0; i < gameMatches.length; i++) {
     let gameMatchEl = $("<div>");
-    gameMatchEl.attr("class", "uk-grid-small");
+    gameMatchEl.attr("class", "uk-grid-small game-match");
     gameMatchEl.attr("uk-grid", "");
     let gameMatchTextEl = $("<div>").text(gameMatches[i])
     gameMatchTextEl.attr("class", "uk-width-expand");
     gameMatchTextEl.attr("uk-leader", "fill: -");
     let gameCloseButtonEl = $("<button>").text("Played It");
-    gameCloseButtonEl.attr("class", "uk-button uk-button-default uk-button-small movie-close-btn");
+    gameCloseButtonEl.attr("class", "uk-button uk-button-default uk-button-small game-close-btn");
+    gameCloseButtonEl.attr("type", "button");
     $("#myMatchesG").append(gameMatchesListEl);
     gameMatchesListEl.append(gameMatchEl);
     gameMatchEl.append(gameMatchTextEl);
