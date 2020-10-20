@@ -64,11 +64,15 @@ Each personality was considered a "bucket" in which we put specific categories (
 
 The first question would narrow which gaming platform would be used in the AJAX call. Question two would narrow down the personality types by play type and helped determine which set of questions the user would be shown. There was a set of questions for each play type: single player, co-op player, multiplayer.
 
-Tommy fill out question handlers here
+There were a total of 5 objects that contained all of the different question trees. The first handler was the matchme button which hid the button and added the questions for the first questions. The buttons on the questions had a data value that stored what console they used to be stored later and moved to the second question.
+
+The second question buttons had another data value attached to them and added a value to a variable for if the user wanted singleplayer, multiplayer, or co-op games. This choice also moved the user into one of three different question trees based on play-type.
+
+The final set of question buttons related to the 5 questions in the different question paths. These buttons had a data value that related to the different personalities mentioned above and would add a value to it if pressed. Once the last questions was pressed, the object that contained the user inputed data values would be sorted and the value with the highest score would be sorted as first and be the users choosen personality. This personality bucket would then be saved for the ajax call.
 
 #### Quiz Results Storage and Recall
 
-Tommy fill out ajax storage here
+Based on the seven question the user selected in the quiz a object was created. This object called "resultsObj" contained all of the data for the user including values for the ajax call and personality information. It was then stored into local storage so it could be called upon in the results page.
 
 For the AJAX recall, we used the information saved in local storage to get the "Stored-Character-Class" object. We used the information in the object to create variables (e.g. gamePlatform, gamePlayType, etc) that could be used in the API URLs.
 
@@ -78,15 +82,15 @@ Still using the "Stored-Character-Class" object from local storage, we were able
 
 ### Ajax Call
 
-Tommy fill out stuff here
+For the ajax call, the data that was pulled from local storage was added to the query url and used to get the information from the database and display it in the results page. There were two ajax calls total made (one for each database). In each call the results were sorted by popularity and then the top 20 or 30 results were randomly selected from. The TMDB call was a little trickier because you could only request one genre at a time. Since the personality buckets we created included multiple genres, we created a random generator that would reandomly select one of the genres for the call.
 
 ### My Matches Storage and Recall
 
-tommy fill out stuff here
+In the results section we added the option for the user to refresh their results as well as save their results. We did this so the user to request a different game/movie choice if they had already played it/watched it. The save buttons created two arrays (one for movies and one for games) that saved the name of the movie/game. This was then stringified and stored into local storage to be called in the myMatches page.
 
 ### Seen It Played It Buttons
 
-tommy fill out stuff here
+In the My Matches page the saved movie and game matches that were stored were displayed and given a seen it/played it button. These buttons allowed the user to remove any matches that they have already played from their list.
 
 ### Video Tutorial
 
