@@ -32,7 +32,7 @@ View the [github-pages](https://tommywillen.github.io/Gameflix/)
 - [Easter Egg!](#easter-egg!)
 
 ## Project Description
-![Gameflix Gif]()
+![Gameflix Gif](assets\img\Gameflix.gif)
 
 As an avid gamer and movie-goer
 I want a way to find new games and movies based on my preferences

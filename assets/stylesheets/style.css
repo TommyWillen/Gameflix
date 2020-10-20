@@ -136,7 +136,6 @@ div button {
   font-size: x-large;
 }
 
-<<<<<<< HEAD
 #role-description {
     text-align: center;
 }
@@ -146,13 +145,11 @@ pre,
 ul {
   margin: 30px 0 20px 0;
 } */
-=======
 .game-close-btn, .movie-close-btn {
     z-index: 1;
 
 }
 
->>>>>>> dev
 #movie-name, #game-name {
     color: #000 !important;
 
