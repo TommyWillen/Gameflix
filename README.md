@@ -44,9 +44,11 @@ View the [github-pages](https://tommywillen.github.io/Gameflix/)
 
 ### Layout and Design
 
-#### Home Page
+#### Home Page  
 
-Amber fill out stuff here!
+Layout and designed Home Page using UIkit, as well as, free stock images from Freepik and Pexels. Cyberpunk inspired theme and color scheme. 
+
+![Home Page.](assets/img/home.page.png)  
 
 #### Results Page
 
@@ -54,7 +56,9 @@ Sandra fill out stuff here!
 
 #### My Matches Page
 
-Amber fill out stuff here!
+Layout and designed MyMatches page using UIkit, as well as, free stock images from Freepik and Pexels. Cyberpunk inspired theme and color scheme. 
+
+![MyMatches.](assets/img/mymatches.png) 
 
 ### Interest Quiz and Question Handlers
 
@@ -126,7 +130,12 @@ Tommy Willen
 Bailey Myers
 - [Email](baileymyers96@gmail.com)
 - [Github Page](https://github.com/baileymyers)
-- [LinkedIn](https://www.linkedin.com/in/bailey-myers-9a39a3b8/)
+- [LinkedIn](https://www.linkedin.com/in/bailey-myers-9a39a3b8/)  
+
+Amber Alex Lee
+- [Email](lee.amber.alex@gmail.com)
+- [Github Page](https://github.com/lee-amber-alex)
+- [LinkedIn](www.linkedin.com/in/leeamberalex)
 
 
 ## Acknowledgements
