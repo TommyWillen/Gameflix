@@ -502,7 +502,7 @@ $(document).ready(function () {
         let resultsObj = {
              name: "LiveLaughLove",
              gameGenre: "14,40",
-             movieGenre: "35,10402,10749",
+             movieGenre: [35,10402,10749],
              playType: gamePlayType,
              platform: gamePlatform,
              description: "Based on your responses, we can tell you're laid back. You like playing games and watching movies, but you're not too serious about it. You just want a movie that will make you laugh and a game that doesn't take too much time.",
@@ -516,7 +516,7 @@ $(document).ready(function () {
          let resultsObj = {
              name: "Bruh",
              gameGenre: "1,2,15",
-             movieGenre: "28,35,37",
+             movieGenre: [28,35,37],
              playType: gamePlayType,
              platform: gamePlatform,
              description: "Based on your responses, we can tell you like action-packed games and movies.",
@@ -530,7 +530,7 @@ $(document).ready(function () {
          let resultsObj = {
              name: "Puzzle",
              gameGenre: "7,10,51",
-             movieGenre: "18,80,36,27,9648,878",
+             movieGenre: [18,80,36,27,9648,878],
              playType: gamePlayType,
              platform: gamePlatform,
              description: "Based on your responses, we can tell you like games and movies that are thought-provoking and a little puzzling. You want a game or movie that makes you think.",
@@ -544,7 +544,7 @@ $(document).ready(function () {
          let resultsObj = {
              name: "NostalgicComedian",
              gameGenre: "11,83",
-             movieGenre: "28,35,878,9648",
+             movieGenre: [28,35,878,9648],
              playType: gamePlayType,
              platform: gamePlatform,
              description: "Based on your responses, we can tell you might be a little nostalgic for the OG games. We can also tell you like comedies, maybe with a twist of mystery or sci-fi.",
@@ -558,7 +558,7 @@ $(document).ready(function () {
          let resultsObj = {
              name: "Wanderluster",
              gameGenre: "3,5,51,59",
-             movieGenre: "12,18,14,27,878",
+             movieGenre: [12,18,14,27,878],
              playType: gamePlayType,
              platform: gamePlatform,
              description: "Based on your results, we can tell you yearn to be anywhere but in this universe. You like adventurous plotlines in fantastical worlds.",
@@ -572,7 +572,7 @@ $(document).ready(function () {
          let resultsObj = {
              name: "DisplacedRage",
              gameGenre: "2,6,15,59",
-             movieGenre: "28,36,27,53,37,10752",
+             movieGenre: [28,36,27,53,37,10752],
              playType: gamePlayType,
              platform: gamePlatform,
              description: "Based on your responses, we can tell that you have some buried rage that's itching to be let out. Better to let it out by playing one of these video games or watching one of these movies!",
@@ -586,7 +586,7 @@ $(document).ready(function () {
          let resultsObj = {
              name: "AdrenalineAddict",
              gameGenre: "3,4,59",
-             movieGenre: "12,28,14,53,878,37,10752",
+             movieGenre: [12,28,14,53,878,37,10752],
              playType: gamePlayType,
              platform: gamePlatform,
              description: "Based on your responses, we can tell you like feeling your heart nearly jump out of your chest. You'll like these games and movies that give you the action and thrills that you're seeking.",
@@ -600,7 +600,7 @@ $(document).ready(function () {
          let resultsObj = {
              name: "EasyGoing",
              gameGenre: "7,17,19,28,34",
-             movieGenre: "16,99,10751,36,10402",
+             movieGenre: [16,99,10751,36,10402],
              playType: gamePlayType,
              platform: gamePlatform,
              description: "Based on your responses, we can tell you spend a lot of time with family and friends. We picked out a movie and game that you'll want to share with them.",
