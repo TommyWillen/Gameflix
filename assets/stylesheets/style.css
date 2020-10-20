@@ -9,7 +9,7 @@ body {
 .overlay {
   background: url("../img/bg.2.png");
   background-size: contain;
-  position: absolute;
+  position: fixed;
   height: 100% !important;
   width: 100%;
   opacity: 0.25;
@@ -130,4 +130,11 @@ div button {
 
 .game-close-btn, .movie-close-btn {
     z-index: 1;
+
+}
+
+#movie-name, #game-name {
+    color: #000 !important;
+
+
 }
