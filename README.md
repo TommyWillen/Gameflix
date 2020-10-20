@@ -44,9 +44,11 @@ View the [github-pages](https://tommywillen.github.io/Gameflix/)
 
 ### Layout and Design
 
-#### Home Page
+#### Home Page  
 
-Amber fill out stuff here!
+Layout and designed Home Page using UIkit, as well as, free stock images from Freepik and Pexels. Cyberpunk inspired theme and color scheme. 
+
+![Home Page.](assets/img/home.page.png)  
 
 #### Results Page
 
@@ -54,11 +56,17 @@ Sandra fill out stuff here!
 
 #### My Matches Page
 
-Amber fill out stuff here!
+Layout and designed MyMatches page using UIkit, as well as, free stock images from Freepik and Pexels. Cyberpunk inspired theme and color scheme. 
+
+![MyMatches.](assets/img/mymatches.png) 
 
 ### Interest Quiz and Question Handlers
 
-Bailey fill out quiz question stuff here
+For the quiz, we created 8 different personalities: The Displaced Rage, The Adrenaline Addict, The Easy Going, The Wanderluster, The Bruh, The Puzzle, The Nostalgic Comedian, and The LiveLaughLove.
+
+Each personality was considered a "bucket" in which we put specific categories (Play Types, Video Game Genres, Movie Genres).
+
+The first question would narrow which gaming platform would be used in the AJAX call. Question two would narrow down the personality types by play type and helped determine which set of questions the user would be shown. There was a set of questions for each play type: single player, co-op player, multiplayer.
 
 Tommy fill out question handlers here
 
@@ -66,11 +74,11 @@ Tommy fill out question handlers here
 
 Tommy fill out ajax storage here
 
-Bailey fill out ajax recall here
+For the AJAX recall, we used the information saved in local storage to get the "Stored-Character-Class" object. We used the information in the object to create variables (e.g. gamePlatform, gamePlayType, etc) that could be used in the API URLs.
 
 #### Character Class Determination
 
-Bailey fill out stuff here
+Still using the "Stored-Character-Class" object from local storage, we were able to pull the name and description of the user's personality result. When the user finishes taking the quiz, they will be presented with the name of their personality along with the description.
 
 ### Ajax Call
 
@@ -118,7 +126,12 @@ Tommy Willen
 Bailey Myers
 - [Email](baileymyers96@gmail.com)
 - [Github Page](https://github.com/baileymyers)
-- [LinkedIn](https://www.linkedin.com/in/bailey-myers-9a39a3b8/)
+- [LinkedIn](https://www.linkedin.com/in/bailey-myers-9a39a3b8/)  
+
+Amber Alex Lee
+- [Email](lee.amber.alex@gmail.com)
+- [Github Page](https://github.com/lee-amber-alex)
+- [LinkedIn](www.linkedin.com/in/leeamberalex)
 
 
 ## Acknowledgements
