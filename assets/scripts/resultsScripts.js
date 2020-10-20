@@ -129,6 +129,14 @@ function displayQuestRole () {
 }
 displayQuestRole();
 
+function displayQuestRoleDescription () {
+    let questRole = JSON.parse(localStorage.getItem("Stored-Character-Class"));
+    console.log(questRole.description);
+
+    $("#role-description").text(questRole.description);
+}
+displayQuestRoleDescription();
+
 $("#refresh-movie").on("click", function(){
     movieNameEl.empty();
     movieGenresEl.empty();

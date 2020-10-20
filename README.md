@@ -39,7 +39,7 @@ View the [github-pages](https://tommywillen.github.io/Gameflix/)
 - Tommy: Ajax call, local storage, button handlers
 - Amber:  Layout and Design for homepage and saved information
 - Sandra:  Responsible for the styling  of the results page   
-- Bailey:
+- Bailey: Created quiz and character roles; local storage and ajax recall; created favicon
 
 
 ### Layout and Design
@@ -115,7 +115,10 @@ Tommy Willen
 - [Github Page](https://github.com/TommyWillen)
 - [LinkedIn](https://www.linkedin.com/in/tommy-willen-12867b1b3/)
 
-Everyone Else put your contact info here!
+Bailey Myers
+- [Email](baileymyers96@gmail.com)
+- [Github Page](https://github.com/baileymyers)
+- [LinkedIn](https://www.linkedin.com/in/bailey-myers-9a39a3b8/)
 
 
 ## Acknowledgements
