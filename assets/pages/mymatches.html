@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Ranchers&family=Roboto+Mono:wght@500&family=Russo+One&family=ZCOOL+QingKe+HuangYou&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../stylesheets/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <title>Gameflix</title>
-</head>
+    <title>Gameflix</title>
+  </head>
+  <body class="uk-background-secondary uk-light uk-padding">
+    <div class="overlay"></div>
+    <div class="uk-position-top">
+      <nav
+        class="uk-navbar-container uk-navbar-transparent uk-sticky"
+        uk-navbar
+      >
+        <div class="uk-navbar-left">
+          <ul class="uk-navbar-nav">
+            <li><a href="../../index.html">HOME</a></li>
+            <li class="uk-active"><a href="mymatches.html">My Matches </a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <h1 id="gameFlix" class="uk-heading-xlarge uk-heading-medium uk-text-center">
+      GameFlix!
+    </h1>
+    <div
+      class=" uk-width-1-1 uk-box-shadow-bottom uk-container uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+      data-src="../../assets/img/film.5.jpg"
+      uk-img
+    ></div>
 
-<body class="uk-background-secondary uk-light uk-padding">
-  <div class="uk-position-top">
-    <nav class="uk-navbar-container uk-navbar-transparent uk-sticky" uk-navbar>
-      <div class="uk-navbar-left">
-        <ul class="uk-navbar-nav">
-          <li><a href="../../index.html">HOME</a></li>
-          <li class="uk-active"><a href="mymatches.html">My Matches </a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <h1 class="uk-heading-xlarge uk-heading-medium uk-text-center">
-    GameFlix!
-  </h1>
-  <div class="uk-container uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-    data-src="../../assets/img/film.5.jpg" uk-img></div>
+    <div id="playWatch" class=" uk-container uk-margin-top uk-padding-bottom">
+      <div id="test">
+      <h3 style="margin-top: 20px">Play it:</h3>
+      <div id="game-matches-list"></div>
+      
+      <h3>Watch it:</h3>
+      <div id="movie-matches-list"></div>
+    </div>
+    </div>
 
-  <div class="uk-container uk-margin-top">
-    <h3>Play it:</h3>
-    <div id="game-matches-list"></div>
 
-    <h3>Watch it:</h3>
-    <div id="movie-matches-list"></div>
-  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
