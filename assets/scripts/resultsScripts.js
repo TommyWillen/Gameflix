@@ -61,8 +61,10 @@ $(document).ready(function () {
     function displayMovieInfo() {
         let questRole = JSON.parse(localStorage.getItem("Stored-Character-Class"));
         movieGenre = questRole.movieGenre;
-        
-        let movieURL = "https://api.themoviedb.org/3/discover/movie?api_key=8f8b7c9d8d66c3bf3418011e60cf74d6&language=en-US&sort_by=vote_average.desc&include_adult=false&include_video=false&page=1&vote_count.gte=400&vote_average.gte=8&with_genres=" + movieGenre;
+        console.log(movieGenre)
+        randoGenre = movieGenre[Math.floor(Math.random() * movieGenre.length)]
+        console.log(randoGenre)
+        let movieURL = "https://api.themoviedb.org/3/discover/movie?api_key=8f8b7c9d8d66c3bf3418011e60cf74d6&language=en-US&sort_by=vote_average.desc&include_adult=false&include_video=false&page=1&vote_count.gte=400&vote_average.gte=8&with_genres=" + randoGenre;
 
         $.ajax({
             url: movieURL,
