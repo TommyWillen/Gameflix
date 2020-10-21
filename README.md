@@ -29,8 +29,6 @@ View the [github-pages](https://tommywillen.github.io/Gameflix/)
 
 - [Acknowledgements](#acknowledgements)
 
-- [Easter Egg!](#easter-egg!)
-
 ## Project Description
 ![Gameflix Gif]()
 
@@ -57,7 +55,11 @@ Layout and designed Home Page using UIkit, as well as, free stock images from Fr
 
 #### Results Page
 
-Sandra fill out stuff here!
+The results page was styled based on the quiz results. 
+
+There the user can see what film they should view or what game they should play so those were displayed in cards. 
+
+A dark background was added to keep all pages uniform. 
 
 #### My Matches Page
 
@@ -142,6 +144,10 @@ Amber Alex Lee
 - [Github Page](https://github.com/lee-amber-alex)
 - [LinkedIn](www.linkedin.com/in/leeamberalex)
 
+Sandra de la Torre
+- [Email](sandradltrahyatt@gmail.com)
+- [github Page](https://github.com/Bootcamp874)
+- [LinkedIn](https://www.linkedin.com/in/sandra-de-la-torre-a350461b1/)
 
 ## Acknowledgements
 
