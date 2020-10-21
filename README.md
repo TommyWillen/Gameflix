@@ -29,8 +29,6 @@ View the [github-pages](https://tommywillen.github.io/Gameflix/)
 
 - [Acknowledgements](#acknowledgements)
 
-- [Easter Egg!](#easter-egg!)
-
 ## Project Description
 ![Gameflix Gif]()
 
