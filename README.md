@@ -50,7 +50,11 @@ Amber fill out stuff here!
 
 #### Results Page
 
-Sandra fill out stuff here!
+The results page was styled based on the quiz results. 
+
+There the user can see what film they should view or what game they should play so those were displayed in cards. 
+
+A dark background was added to keep all pages uniform. 
 
 #### My Matches Page
 
@@ -124,6 +128,10 @@ Bailey Myers
 - [Github Page](https://github.com/baileymyers)
 - [LinkedIn](https://www.linkedin.com/in/bailey-myers-9a39a3b8/)
 
+Sandra de la Torre
+- [Email](sandradltrahyatt@gmail.com)
+- [github Page](https://github.com/Bootcamp874)
+- [LinkedIn](https://www.linkedin.com/in/sandra-de-la-torre-a350461b1/)
 
 ## Acknowledgements
 
