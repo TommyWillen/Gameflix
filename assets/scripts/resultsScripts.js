@@ -56,6 +56,7 @@ $(document).ready(function () {
     }
     if (storedGameMatches) {
         gameMatches = JSON.parse(storedGameMatches);
+        console.log(gameMatches)
     }
 
     function displayMovieInfo() {
@@ -204,6 +205,7 @@ for (let i = 0; i < movieMatches.length; i++) {
 $(document).on("click", ".game-close-btn", playedItClose)
 
 function playedItClose() {
+    console.log("button mcbuttonerson")
     gameMatches.splice(parseInt($(this).prev().attr("data-index")), 1);
     $(this).parent().remove();
     storedGameMatches = JSON.stringify(gameMatches);
