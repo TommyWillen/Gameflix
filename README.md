@@ -30,7 +30,7 @@ View the [github-pages](https://tommywillen.github.io/Gameflix/)
 - [Acknowledgements](#acknowledgements)
 
 ## Project Description
-![Gameflix Gif](assets\img\Gameflix.gif)
+<img src="./assets/img/Gameflix.gif" alt="Gameflix Gif" width="auto" height="auto" />
 
 As an avid gamer and movie-goer
 I want a way to find new games and movies based on my preferences
